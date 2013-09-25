@@ -2,6 +2,11 @@
 
 <!DOCTYPE html>
 
+<script runat="server">
+    string CustomBGColor =
+         ConfigurationManager.AppSettings["backgroundColor"];
+</script>
+
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
@@ -12,7 +17,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>    
+       
         <img src="images/JAMK.JPG" />   
         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
         
