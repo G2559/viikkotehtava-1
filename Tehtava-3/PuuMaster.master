@@ -1,0 +1,38 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="PuuMaster.master.cs" Inherits="Tehtava_3_PuuMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link href="../puu_ulkoasu.css" rel="stylesheet" type="text/css" />
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+
+        <img src="../images/masterKuva.png" />
+
+        <div id="navi">
+            <asp:HyperLink ID="HyperLinkHome" runat="server" NavigateUrl="G2559_puuNakyma.aspx">HOME</asp:HyperLink>
+            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="tehtava_3lisasivu.aspx">PRODUCTS</asp:HyperLink>
+            <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="tehtava_3lisasivu.aspx">COLORS</asp:HyperLink>
+            <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="tehtava_3lisasivu.aspx">PRICES</asp:HyperLink>
+            <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/G2559_indexNP.aspx">ABOUT US</asp:HyperLink>
+        </div>
+    <div id="main">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+            
+        </asp:ContentPlaceHolder>
+
+        </div>
+
+    </div>
+
+        <div><h2>Copyright G2559</h2></div>
+
+    </form>
+</body>
+</html>

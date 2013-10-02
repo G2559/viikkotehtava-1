@@ -29,7 +29,11 @@
     <div>
         <br />
         <asp:HyperLink ID="HyperLinkT2" runat="server" NavigateUrl="~/G2559_elakelaskuri.aspx">Viikkotehtävän 2 ratkaisu</asp:HyperLink><br />
+    </div>
 
+    <div>
+        <br />
+        <asp:HyperLink ID="HyperLinkT3" runat="server" NavigateUrl="~/G2559_puuNakyma.aspx">Viikkotehtävän 3 ratkaisu</asp:HyperLink><br />
     </div>
 
 </asp:Content>

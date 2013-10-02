@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<nailpolishes>
+  <brand name="Essie">
+    <polish color="Red">
+      <name>
+        cute as a button
+      </name>
+      <name>
+        leading lady
+      </name>
+    </polish>
+  </brand>
+  <brand name="GOSH">
+    <polish color="Red">
+      <name>
+        587 HOT CORAL
+      </name>
+      <name>
+        614 SPOT ON! PINK
+      </name>
+    </polish>   
+  </brand>
+  <brand name="Wet n Wild">
+    <polish color="Red">
+      <name>
+        E2148 I Red a Good Book
+      </name>
+    </polish>   
+  </brand>
+  <brand name="Gina Tricot Beauty Nails">
+    <polish color="Blue">
+      <name>
+        16 Marina
+      </name>
+      <name>
+        125 Candy mint
+      </name>
+    </polish>
+    <polish color="Metallic">
+      <name>
+        13 Silver
+      </name>
+      <name>
+        14 Gold
+      </name>
+      <name>
+        89 Punk
+      </name>
+      <name>
+        95 Expresso
+      </name>
+    </polish>
+  </brand>  
+</nailpolishes>
