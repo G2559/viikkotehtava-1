@@ -36,6 +36,14 @@
         <asp:HyperLink ID="HyperLinkT3" runat="server" NavigateUrl="~/G2559_puuNakyma.aspx">Viikkotehtävän 3 ratkaisu</asp:HyperLink><br />
     </div>
 
+    <div>
+        <br />
+
+        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/G2559_SqlDataSource.aspx">Demo of databound controls</asp:HyperLink><br />
+        <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/G2559_dbcontrols2.aspx">Demo of databound controls for single data item</asp:HyperLink><br />
+        <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/G2559_Records.aspx">Demo of databound controls for single data item</asp:HyperLink><br />
+    </div>
+
 </asp:Content>
 
         
