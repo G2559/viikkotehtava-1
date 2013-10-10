@@ -20,6 +20,7 @@ public partial class vko40_tuntitehtavat_G2559_TheaterFeeds : System.Web.UI.Page
     {
         string theatreShows = urlToMovies + myListBox.SelectedItem.Value;
         myDataSource.DataFile = theatreShows;
+        myRepeater.DataSource = myDataSource;
         myRepeater.DataBind();
     }
     protected void btnGetTheatres_Click(object sender, EventArgs e)

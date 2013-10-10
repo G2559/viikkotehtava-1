@@ -7,9 +7,12 @@
     <asp:ListBox ID="myListBox" runat="server" DataTextField="ID"
         row="18" OnSelectedIndexChanged="myListBox_SelectedIndexChanged"
         AutoPostBack="true" />
-    <asp:XmlDataSource ID="myDataSource" runat="server" />
-    <asp:Repeater ID="myRepeater" runat="server" DataSourceID="myDataSource">
+    <asp:XmlDataSource ID="myDataSource" runat="server" XPath="Schedule/Shows/Show"/>
+    <asp:Repeater ID="myRepeater" runat="server">
         <ItemTemplate>
+            <!-- elokuvan nimi -->
+            <asp:Label ID="label1" runat="server"
+                Text ='<%#XPath("Title") %>' />
             <!-- esitetään elokuvan kuva -->
             <asp:Image ID="image1" runat="server"
                 ImageUrl ='<%#XPath("Images/EventSmallImagePortrait") %>' />
