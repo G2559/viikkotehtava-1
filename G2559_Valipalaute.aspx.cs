@@ -30,7 +30,7 @@ public partial class Valipalaute : System.Web.UI.Page
     protected void btnLaheta_Click(object sender, EventArgs e)
     {
         XmlDocument oXmlDocument = new XmlDocument();
-        oXmlDocument.Load(@"D:\G2559\viikkotehtava-1\App_Data\Palautteet.xml"); 
+        oXmlDocument.Load(MapPath("~/App_Data/Palautteet.xml")); 
         XmlNode oXmlRootNode = oXmlDocument.SelectSingleNode("palautteet"); 
         XmlNode oXmlRecordNode = oXmlRootNode.AppendChild(oXmlDocument.CreateNode(XmlNodeType.Element, "palaute", "")); 
         oXmlRecordNode.AppendChild(oXmlDocument.CreateNode(XmlNodeType.Element, "pvm", "")).InnerText = txtPvm.Text; 
@@ -40,6 +40,6 @@ public partial class Valipalaute : System.Web.UI.Page
         oXmlRecordNode.AppendChild(oXmlDocument.CreateNode(XmlNodeType.Element, "hyvaa", "")).InnerText = txtHyvaa.Text; 
         oXmlRecordNode.AppendChild(oXmlDocument.CreateNode(XmlNodeType.Element, "parannettavaa", "")).InnerText = txtParannettavaa.Text; 
         oXmlRecordNode.AppendChild(oXmlDocument.CreateNode(XmlNodeType.Element, "muuta", "")).InnerText = txtMuuta.Text;
-        oXmlDocument.Save(@"D:\G2559\viikkotehtava-1\App_Data\Palautteet.xml");
+        oXmlDocument.Save(MapPath("~/App_Data/Palautteet.xml"));
     }
 }

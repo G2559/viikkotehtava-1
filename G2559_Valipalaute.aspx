@@ -29,23 +29,24 @@
                       ForeColor="Red">
                     </asp:RequiredFieldValidator>
 
-                    Nimi :<asp:TextBox ID="txtNimi" runat="server" Width="158px"></asp:TextBox>
-                    <br/>
+                    Nimi :<asp:TextBox ID="txtNimi" runat="server" Width="158px"></asp:TextBox>                   
 
                     <asp:RequiredFieldValidator id="RequiredFieldValidator2" runat="server"
                       ControlToValidate="txtNimi"
                       ErrorMessage="!"
                       ForeColor="Red">
                     </asp:RequiredFieldValidator>
+                    <br />
 
-                    Olen oppinut:<asp:TextBox ID="txtOppinut" runat="server" TextMode="MultiLine"></asp:TextBox>
-                    <br/>
+
+                    Olen oppinut:<asp:TextBox ID="txtOppinut" runat="server" TextMode="MultiLine"></asp:TextBox>                   
 
                     <asp:RequiredFieldValidator id="RequiredFieldValidator3" runat="server"
                       ControlToValidate="txtOppinut"
                       ErrorMessage="!"
                       ForeColor="Red">
                     </asp:RequiredFieldValidator>
+                    <br/>
 
                     Haluan oppia:<asp:TextBox ID="txtHaluanoppia" runat="server" TextMode="MultiLine"></asp:TextBox>
 
@@ -88,9 +89,9 @@
          
             <asp:GridView ID="gvpalautteet" runat="server" BackColor="#ffffff"></asp:GridView> <br />
                 
-            <h2>Haettu:  
+              
                 <asp:Label ID="lbltulokset" runat="server" Text=""></asp:Label>
-                palautetta</h2>
+                
             
         </div>
 
