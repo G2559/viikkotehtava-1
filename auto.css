@@ -1,20 +1,27 @@
-﻿body   
+body   
 {
-    width: 750px;
+    width: 550px;
     margin: 0 auto;
     position: relative; 
     font-size: .80em;
     font-family: "Candara", "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;
     padding: 0px;
+    background-image: url('images/autoTausta.jpg');
+    background-repeat:repeat;
 }
-#leftcolumn {
-     width: 400px; 
-     float: left; 
-     margin-left: 10px;
+
+#sisalto {
+    width: 500px;
+    padding-left: 20px;
+    padding-top: 10px;
 }
 
 #footer {
     clear: both;
+}
+
+h1 {
+    font-size: 30px;
 }
 
 h5, h6
@@ -27,7 +34,7 @@ h5, h6
     margin: 0 auto;
 }
 #nelio {
-    border-radius: 5px;
+    border-radius: 10px;
     background: #fff;
-    height: 250px;
+    height: 400px;
 }

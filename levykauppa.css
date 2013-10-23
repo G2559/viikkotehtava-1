@@ -1,0 +1,13 @@
+﻿body {
+    font-family: "Candara", "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;
+}
+
+#kuva {
+float:left;
+padding-right:100px;
+}
+
+#tiedot {
+float:left;
+margin-left:10px;
+}
