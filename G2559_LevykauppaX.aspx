@@ -21,7 +21,7 @@
                 <div id="tiedot">    
                 <h2><%# Eval("Artist") %> : <%# Eval("Title") %></h2> <br />
                 <b>ISBN:</b> 
-                <asp:HyperLink ID="hype1" runat="server" NavigateUrl='<%# "~/G2559_LevykauppaX_lisasivu.aspx?ISBN=" + Eval("ISBN").ToString()%>'><%# Eval("ISBN") %></asp:HyperLink> 
+                <asp:HyperLink ID="hype1" runat="server" NavigateUrl='<%# "~/G2559_LevykauppaX_lisasivu.aspx?ISBN=" + Eval("ISBN").ToString()%>'><%# Eval("ISBN") %></asp:HyperLink> <br />
                 <b>Hinta:</b> <%# Eval("Price") %>
                     </div> 
             </ItemTemplate>
