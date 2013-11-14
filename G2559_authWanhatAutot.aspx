@@ -23,12 +23,12 @@
                     <h2>VE1</h2>
     <table>
     <tr><td>Käyttäjä: <asp:TextBox ID="txtKayttaja" runat="server" Width="120px" ></asp:TextBox> </td>
-        <td> <asp:RequiredFieldValidator ID="rfvUser" ErrorMessage="Anna käyttäjä" ControlToValidate="txtKayttaja" runat="server" /></td>
+        <td> <asp:RequiredFieldValidator ID="rfvUser" ErrorMessage="Anna käyttäjä" ValidationGroup="Kirjaudu" ControlToValidate="txtKayttaja" runat="server" /></td>
         
         <td>Salasana: <asp:TextBox ID="txtSala" TextMode="Password" runat="server" Width="120px" ></asp:TextBox></td>
-        <td> <asp:RequiredFieldValidator ID="rfvSala" ErrorMessage="Anna salasana" ControlToValidate="txtSala" runat="server" /></td>
+        <td> <asp:RequiredFieldValidator ID="rfvSala" ErrorMessage="Anna salasana" ValidationGroup="Kirjaudu" ControlToValidate="txtSala" runat="server" /></td>
 
-        <td><asp:Button ID="btnKirjaudu" runat="server" Width="100px" Text="Kirjaudu" onClick="btnKirjaudu_Click" /></td>
+        <td><asp:Button ID="btnKirjaudu" runat="server" Width="100px" Text="Kirjaudu" ValidationGroup="Kirjaudu" onClick="btnKirjaudu_Click" /></td>
     </tr>
     <tr>
         <td><asp:Label ID="lblKirjautuminen" runat="server"></asp:Label></td>
