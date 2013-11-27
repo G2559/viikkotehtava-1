@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="autokantaModel.Store" Alias="Self" Provider="System.Data.SqlServerCe.4.0" ProviderManifestToken="4.0" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="autokantaModelStoreContainer">
+          <EntitySet Name="Auto" EntityType="autokantaModel.Store.Auto" store:Type="Tables" />
+        </EntityContainer>
+        <EntityType Name="Auto">
+          <Key>
+            <PropertyRef Name="aid" />
+          </Key>
+          <Property Name="aid" Type="int" Nullable="false" />
+          <Property Name="rekkari" Type="nvarchar" MaxLength="100" />
+          <Property Name="merkki" Type="nvarchar" MaxLength="100" />
+          <Property Name="malli" Type="nvarchar" MaxLength="100" />
+          <Property Name="vm" Type="nvarchar" MaxLength="100" />
+          <Property Name="myyntiHinta" Type="float" />
+          <Property Name="sisaanOstoHinta" Type="float" />
+        </EntityType>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="autokantaModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="autokantaEntities" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="Auto" EntityType="autokantaModel.Auto" />
+        </EntityContainer>
+        <EntityType Name="Auto">
+          <Key>
+            <PropertyRef Name="aid" />
+          </Key>
+          <Property Name="aid" Type="Int32" Nullable="false" />
+          <Property Name="rekkari" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="merkki" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="malli" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="vm" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="myyntiHinta" Type="Double" />
+          <Property Name="sisaanOstoHinta" Type="Double" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="autokantaModelStoreContainer" CdmEntityContainer="autokantaEntities">
+          <EntitySetMapping Name="Auto">
+            <EntityTypeMapping TypeName="autokantaModel.Auto">
+              <MappingFragment StoreEntitySet="Auto">
+                <ScalarProperty Name="aid" ColumnName="aid" />
+                <ScalarProperty Name="rekkari" ColumnName="rekkari" />
+                <ScalarProperty Name="merkki" ColumnName="merkki" />
+                <ScalarProperty Name="malli" ColumnName="malli" />
+                <ScalarProperty Name="vm" ColumnName="vm" />
+                <ScalarProperty Name="myyntiHinta" ColumnName="myyntiHinta" />
+                <ScalarProperty Name="sisaanOstoHinta" ColumnName="sisaanOstoHinta" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Default" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
